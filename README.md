@@ -1,4 +1,4 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+
 
 **AIM:**
 
@@ -32,15 +32,29 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+i)
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
 
+ii)
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
 Developed by: RegisterNumber:*/
 
 
 **RTL realization**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0e3a9120-0409-4dbc-832e-af1d56abeec5" />
 
 **Output:**
+<img width="1177" height="842" alt="image" src="https://github.com/user-attachments/assets/b18819c5-da49-4d30-ba9c-693d6af8bbff" />
 
 **RTL**
 
